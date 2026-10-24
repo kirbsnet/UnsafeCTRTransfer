@@ -1,7 +1,8 @@
-# SafeCTRTransfer
-Safe, simple, user-friendly CTRNAND transfer tool
+# UnsafeCTRTransfer: NO GODMODE9
+Very much unsafe, simple, user-friendly CTRNAND transfer tool
 
-SafeCTRTransfer allows you to do the CTRNAND transfer on a previously unhacked 3DS. For CTRNAND transfers on consoles that have arm9loaderhax installed, use [GodMode9](https://github.com/d0k3/GodMode9).
+UnsafeCTRTransfer allows you to do the CTRNAND transfer on a previously unhacked 3DS DevKit. GodMode9 not supported.
+# ONLY USE THIS ON A DEVKIT. EVEN THEN, USING THIS IS INCREDIBLY BALLSY.
 
 ## Quick Instructions
 Put the two files listed below into the `sd:/ctrtransfer` folder, then run the SafeCTRTransfer payload (`SafeCTRTransfer.bin`) via the entrypoint of your choice (most likely [safehax](https://github.com/TiniVi/safehax)). Keep in mind that the CTRNAND image will be modified in the process.
