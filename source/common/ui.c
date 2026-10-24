@@ -135,7 +135,7 @@ void TruncateString(char* dest, const char* orig, int nsize, int tpos) {
     }
 }
 
-void FormatNumber(char* str, u64 number) { // str should be 32 byte in size
+void FormatNumber(char* str, u64 number) { // str should be 64 byte in size
     u64 mag1000 = 1;
     *str = '\0';
     for (; number / (mag1000 * 1000) > 0; mag1000 *= 1000);
@@ -145,11 +145,11 @@ void FormatNumber(char* str, u64 number) { // str should be 32 byte in size
     }
 }
 
-void FormatBytes(char* str, u64 bytes) { // str should be 32 byte in size, just to be safe
+void FormatBytes(char* str, u64 bytes) { // str should be 64 byte in size, just to be safe
     const char* units[] = {" Byte", " kB", " MB", " GB"};
     
-    if (bytes == (u64) -1) snprintf(str, 32, "INVALID");
-    else if (bytes < 1024) snprintf(str, 32, "%llu%s", bytes, units[0]);
+    if (bytes == (u64) -1) snprintf(str, 64, "INVALID");
+    else if (bytes < 1024) snprintf(str, 64, "%llu%s", bytes, units[0]);
     else {
         u32 scale = 1;
         u64 bytes100 = (bytes * 100) >> 10;
