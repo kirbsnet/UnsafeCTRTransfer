@@ -7,9 +7,10 @@ UnsafeCTRTransfer allows you to do the CTRNAND transfer on a previously unhacked
 ## Quick Instructions
 Put the two files listed below into the `sd:/ctrtransfer` folder, then run the SafeCTRTransfer payload (`SafeCTRTransfer.bin`) via the entrypoint of your choice (most likely [safehax](https://github.com/TiniVi/safehax)). Keep in mind that the CTRNAND image will be modified in the process.
 * **794,624,000 byte O3DS FW 2.1 CTRNAND image** (with MBR, called `ctrnand_full.bin` in [GodMode9](https://github.com/d0k3/GodMode9)) - this will be modified in the process
-* **32 byte SHA file** (filename: same as above with `.sha`appended) - SHA256 checksum, for bigger files anything above 32 byte will be ignored
+* **32 byte SHA file** (filename: same as above with `.sha`appended) - SHA256 checksum, for bigger files anything above 64 byte will be ignored
 
 For extended usage instructions, refer to [Plailect's guide](https://3ds.guide/).
+
 
 ## Credits
 * **Normmatt**, for sdmmc.c / sdmmc.h
@@ -21,4 +22,6 @@ For extended usage instructions, refer to [Plailect's guide](https://3ds.guide/)
 * Everyone involved in the development of **[Decrypt9](https://github.com/d0k3/Decrypt9WIP)** and **[GodMode9](https://github.com/d0k3/GodMode9)**
 * The fine folks on **freenode #Cakey**
 * All **[3dbrew.org](https://www.3dbrew.org/wiki/Main_Page) editors**
+* **nandestroyer90000** helped with support
+* **d0k3** original version
 * Everyone I possibly forgot, if you think you deserve to be mentioned, just contact me!
