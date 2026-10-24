@@ -7,7 +7,7 @@ UnsafeCTRTransfer allows you to do the CTRNAND transfer on a previously unhacked
 ## Quick Instructions
 Put the two files listed below into the `sd:/ctrtransfer` folder, then run the SafeCTRTransfer payload (`SafeCTRTransfer.bin`) via the entrypoint of your choice (most likely [safehax](https://github.com/TiniVi/safehax)). Keep in mind that the CTRNAND image will be modified in the process.
 * **794,624,000 byte O3DS FW 2.1 CTRNAND image** (with MBR, called `ctrnand_full.bin` in [GodMode9](https://github.com/d0k3/GodMode9)) - this will be modified in the process
-* **32 byte SHA file** (filename: same as above with `.sha`appended) - SHA256 checksum, for bigger files anything above 64 byte will be ignored
+* **64 byte SHA file** (filename: same as above with `.sha`appended) - SHA256 checksum, for bigger files anything above 64 byte will be ignored
 
 For extended usage instructions, refer to [Plailect's guide](https://3ds.guide/).
 
